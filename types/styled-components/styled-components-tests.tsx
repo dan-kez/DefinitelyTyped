@@ -174,6 +174,32 @@ const ThemedMyButton = withTheme(MyButton);
 
 <ThemedMyButton name={name} />;
 
+// Default Props forwarding
+interface MyButtonDefaultProps {
+    name: string;
+    className?: string;
+}
+
+class MyButtonDefault extends React.Component<MyButtonDefaultProps> {
+    static defaultProps = {
+        name: 'Foo',
+    };
+
+    render() {
+        return <button className={this.props.className} >Custom button</button>;
+    }
+}
+
+// No error for name as it has a default prop
+<MyButtonDefault />;
+
+const StyledMyButtonDefault = styled(MyButtonDefault)`
+    background: red;
+`;
+
+// No error for name as the default prop is forwarded
+<StyledMyButtonDefault />;
+
 /**
  * nested styles
  */
