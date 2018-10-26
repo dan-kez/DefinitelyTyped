@@ -24,4 +24,4 @@ declare class Cleave {
     setPhoneRegionCode(regionCode: string): void;
 }
 
-export = Cleave;
+export default Cleave;

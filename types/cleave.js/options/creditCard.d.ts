@@ -1,4 +1,4 @@
-import Cleave = require("../");
+import Cleave from '../';
 
 // Credit Card Options
 export type CreditCardType =

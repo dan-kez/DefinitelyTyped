@@ -1,6 +1,6 @@
 import * as React from "react";
-import Cleave = require("cleave.js");
-import CleaveReact = require("cleave.js/react");
+import Cleave from 'cleave.js';
+import CleaveReact from 'cleave.js/react';
 import { Props } from "cleave.js/react/props";
 
 const ExampleSelector1 = () => {
